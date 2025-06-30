@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Chat</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Willkommen im Minecraft Chat</h1>
+    <div class="layout">
+      <div class="chat-log" id="chat-log">
+        <!-- Nachrichten erscheinen hier -->
+      </div>
+      <div class="user-list" id="user-list">
+        <!-- Benutzerliste -->
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chat-input" placeholder="Nachricht schreiben...">
+      <button onclick="sendMessage()">Senden</button>
+    </div>
+  </div>
+
+  <script src="/js/client.js"></script>
+</body>
+</html>

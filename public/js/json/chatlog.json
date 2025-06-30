@@ -1,0 +1,535 @@
+{
+  "users": [
+    {
+      "username": "Spieler54",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 0,
+      "chathistory": [
+        {
+          "sender": "Spieler54",
+          "message": "hallo",
+          "timestamp": "2025-06-27T17:47:31.494Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Da brauche ich wohl etwas Hilfe – kannst du es nochmal sagen?",
+          "timestamp": "2025-06-27T17:47:31.501Z"
+        },
+        {
+          "sender": "Spieler54",
+          "message": "arbeit",
+          "timestamp": "2025-06-27T17:47:40.146Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Das habe ich leider nicht verstanden.",
+          "timestamp": "2025-06-27T17:47:40.155Z"
+        },
+        {
+          "sender": "Spieler54",
+          "message": "was kannst ud",
+          "timestamp": "2025-06-27T17:47:46.314Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler17",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 0,
+      "chathistory": [
+        {
+          "sender": "Spieler17",
+          "message": "wie erweiter ich mein geld",
+          "timestamp": "2025-06-27T17:49:07.596Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich bin mir nicht sicher, was du meinst.",
+          "timestamp": "2025-06-27T17:49:07.605Z"
+        },
+        {
+          "sender": "Spieler17",
+          "message": "wer bist du",
+          "timestamp": "2025-06-27T17:49:19.316Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich bin mir nicht sicher, was du meinst.",
+          "timestamp": "2025-06-27T17:49:19.325Z"
+        },
+        {
+          "sender": "Spieler17",
+          "message": "wie geht's",
+          "timestamp": "2025-06-27T17:49:26.426Z"
+        },
+        {
+          "sender": "Spieler17",
+          "message": "djks",
+          "timestamp": "2025-06-29T18:35:50.599Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich glaube, da bin ich kurz eingeschlafen. Was meintest du?",
+          "timestamp": "2025-06-29T18:35:50.616Z"
+        },
+        {
+          "sender": "Spieler17",
+          "message": "kdjsfn",
+          "timestamp": "2025-06-29T18:35:51.942Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Das habe ich leider nicht verstanden.",
+          "timestamp": "2025-06-29T18:35:51.960Z"
+        },
+        {
+          "sender": "Spieler17",
+          "message": "#jndfakn",
+          "timestamp": "2025-06-29T18:35:52.700Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler53",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 1,
+      "chathistory": [
+        {
+          "sender": "Spieler53",
+          "message": "jo",
+          "timestamp": "2025-06-29T09:35:28.893Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich bin mir nicht sicher, was du meinst.",
+          "timestamp": "2025-06-29T09:35:28.909Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler74",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 1,
+      "chathistory": [
+        {
+          "sender": "Spieler74",
+          "message": "hallo",
+          "timestamp": "2025-06-29T11:01:39.551Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Das war zu kompliziert für meine Schaltkreise.",
+          "timestamp": "2025-06-29T11:01:39.571Z"
+        },
+        {
+          "sender": "Spieler74",
+          "message": "kdlksjdl",
+          "timestamp": "2025-06-29T16:34:38.450Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich glaube, da habe ich dich falsch verstanden. Versuch es nochmal?",
+          "timestamp": "2025-06-29T16:34:38.464Z"
+        },
+        {
+          "sender": "Spieler74",
+          "message": "dfnlakndf",
+          "timestamp": "2025-06-29T16:34:39.353Z"
+        },
+        {
+          "sender": "Spieler74",
+          "message": "djkls",
+          "timestamp": "2025-06-29T19:36:44.116Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Könntest du das bitte noch einmal anders formulieren?",
+          "timestamp": "2025-06-29T19:36:44.127Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler19",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 1,
+      "chathistory": [
+        {
+          "sender": "Spieler19",
+          "message": "hallo",
+          "timestamp": "2025-06-29T11:17:46.082Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Das habe ich leider nicht verstanden.",
+          "timestamp": "2025-06-29T11:17:46.103Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler58",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 1,
+      "chathistory": [
+        {
+          "sender": "Spieler58",
+          "message": "hallo",
+          "timestamp": "2025-06-29T11:35:36.874Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Tut mir leid, das habe ich nicht verstanden.",
+          "timestamp": "2025-06-29T11:35:36.895Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler31",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 1,
+      "chathistory": [
+        {
+          "sender": "Spieler31",
+          "message": "hi",
+          "timestamp": "2025-06-29T11:37:47.671Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Tut mir leid, das habe ich nicht verstanden.",
+          "timestamp": "2025-06-29T11:37:47.688Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler80",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 1,
+      "chathistory": [
+        {
+          "sender": "Spieler80",
+          "message": "hi",
+          "timestamp": "2025-06-29T12:26:17.260Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Das habe ich leider nicht verstanden.",
+          "timestamp": "2025-06-29T12:26:17.267Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler88",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 0,
+      "chathistory": [
+        {
+          "sender": "Spieler88",
+          "message": "ha",
+          "timestamp": "2025-06-29T12:48:52.635Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Könntest du das bitte noch einmal anders formulieren?",
+          "timestamp": "2025-06-29T12:48:52.649Z"
+        },
+        {
+          "sender": "Spieler88",
+          "message": "hi",
+          "timestamp": "2025-06-29T12:48:56.284Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Tut mir leid, das habe ich nicht verstanden.",
+          "timestamp": "2025-06-29T12:48:56.297Z"
+        },
+        {
+          "sender": "Spieler88",
+          "message": "dh",
+          "timestamp": "2025-06-29T12:48:58.504Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler71",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 0,
+      "chathistory": [
+        {
+          "sender": "Spieler71",
+          "message": "hi",
+          "timestamp": "2025-06-29T12:59:35.118Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich glaube, da bin ich kurz eingeschlafen. Was meintest du?",
+          "timestamp": "2025-06-29T12:59:35.134Z"
+        },
+        {
+          "sender": "Spieler71",
+          "message": "hi",
+          "timestamp": "2025-06-29T12:59:39.621Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Mein Redstone-Gehirn raucht… wie war das nochmal?",
+          "timestamp": "2025-06-29T12:59:39.632Z"
+        },
+        {
+          "sender": "Spieler71",
+          "message": "crau",
+          "timestamp": "2025-06-29T12:59:56.291Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler14",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 2,
+      "chathistory": [
+        {
+          "sender": "Spieler14",
+          "message": "yo",
+          "timestamp": "2025-06-29T12:59:45.202Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich glaube, da bin ich kurz eingeschlafen. Was meintest du?",
+          "timestamp": "2025-06-29T12:59:45.215Z"
+        },
+        {
+          "sender": "Spieler14",
+          "message": "jd",
+          "timestamp": "2025-06-29T12:59:50.890Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Könntest du das bitte noch einmal anders formulieren?",
+          "timestamp": "2025-06-29T12:59:50.901Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler57",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 1,
+      "chathistory": [
+        {
+          "sender": "Spieler57",
+          "message": "hi",
+          "timestamp": "2025-06-29T13:49:02.251Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Mein Redstone-Gehirn raucht… wie war das nochmal?",
+          "timestamp": "2025-06-29T13:49:02.274Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler60",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 2,
+      "chathistory": [
+        {
+          "sender": "Spieler60",
+          "message": "hi",
+          "timestamp": "2025-06-29T13:49:59.541Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Das war zu kompliziert für meine Schaltkreise.",
+          "timestamp": "2025-06-29T13:49:59.555Z"
+        },
+        {
+          "sender": "Spieler60",
+          "message": "j",
+          "timestamp": "2025-06-29T13:50:02.425Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Das war für mich leider nicht eindeutig.",
+          "timestamp": "2025-06-29T13:50:02.437Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler95",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 2,
+      "chathistory": [
+        {
+          "sender": "Spieler95",
+          "message": "hi",
+          "timestamp": "2025-06-29T15:20:09.959Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich glaube, da habe ich dich falsch verstanden. Versuch es nochmal?",
+          "timestamp": "2025-06-29T15:20:09.973Z"
+        },
+        {
+          "sender": "Spieler95",
+          "message": "hi",
+          "timestamp": "2025-06-29T15:20:16.488Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Entschuldigung, das habe ich nicht ganz verstanden.",
+          "timestamp": "2025-06-29T15:20:16.497Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler65",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 2,
+      "chathistory": [
+        {
+          "sender": "Spieler65",
+          "message": "hi",
+          "timestamp": "2025-06-29T15:22:42.067Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich bin mir nicht sicher, was du meinst.",
+          "timestamp": "2025-06-29T15:22:42.077Z"
+        },
+        {
+          "sender": "Spieler65",
+          "message": "jkj",
+          "timestamp": "2025-06-29T16:41:33.896Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Entschuldigung, das habe ich nicht ganz verstanden.",
+          "timestamp": "2025-06-29T16:41:33.916Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler8",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 1,
+      "chathistory": [
+        {
+          "sender": "Spieler8",
+          "message": "hi",
+          "timestamp": "2025-06-29T15:30:00.106Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Mein Redstone-Gehirn raucht… wie war das nochmal?",
+          "timestamp": "2025-06-29T15:30:00.118Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler35",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 2,
+      "chathistory": [
+        {
+          "sender": "Spieler35",
+          "message": "ji",
+          "timestamp": "2025-06-29T16:34:23.199Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Könntest du das bitte noch einmal anders formulieren?",
+          "timestamp": "2025-06-29T16:34:23.217Z"
+        },
+        {
+          "sender": "Spieler35",
+          "message": "jo",
+          "timestamp": "2025-06-29T16:34:26.009Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich bin mir nicht sicher, was du meinst.",
+          "timestamp": "2025-06-29T16:34:26.023Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler84",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 2,
+      "chathistory": [
+        {
+          "sender": "Spieler84",
+          "message": "jdla",
+          "timestamp": "2025-06-29T19:32:12.236Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Entschuldigung, das habe ich nicht ganz verstanden.",
+          "timestamp": "2025-06-29T19:32:12.255Z"
+        },
+        {
+          "sender": "Spieler84",
+          "message": "kldjfal",
+          "timestamp": "2025-06-29T19:32:13.472Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Da brauche ich wohl etwas Hilfe – kannst du es nochmal sagen?",
+          "timestamp": "2025-06-29T19:32:13.484Z"
+        }
+      ]
+    },
+    {
+      "username": "Spieler46",
+      "currentIntent": [],
+      "currentQuestion": "",
+      "currentSelection": "",
+      "fallBackCounter": 1,
+      "chathistory": [
+        {
+          "sender": "Spieler46",
+          "message": "hi",
+          "timestamp": "2025-06-29T19:36:33.479Z"
+        },
+        {
+          "sender": "Jeff",
+          "message": "Ich glaube, da habe ich dich falsch verstanden. Versuch es nochmal?",
+          "timestamp": "2025-06-29T19:36:33.497Z"
+        }
+      ]
+    }
+  ]
+}

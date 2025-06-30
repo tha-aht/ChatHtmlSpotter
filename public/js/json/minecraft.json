@@ -1,0 +1,59 @@
+{
+  "answers": [
+    {
+      "intent": ["bauen"],
+      "answer": ["Was möchtest du bauen? Ein Haus, eine Farm oder etwas anderes?"],
+      "question": ["Möchtest du noch etwas bauen?"],
+      "selection": ["Ich kann dir dabei Helfen ein Haus, eine Farm oder eine Miene zu bauen"],
+      "list": [
+        { "intent": ["haus", "häuser"], "answer": "Für ein Haus brauchst du Holz, Stein und ein Dach – willst du modern oder mittelalterlich?", "question": "Möchtest du noch ein Haus bauen?", "list": [
+          {"intent": ["modern", "modernes", "moderne"], "answer": ["Du kannst mit Quarz oder Concreat bauen, um einen Modernen Stil zu bekommen."], "question": "Möchtest du noch ein modernes Haus bauen?", "list": [
+            {"intent": ["quarz"], "answer": ["Quarz gibt es im Nether. Es wird aus 4 Quarzshards gecraftet"]}
+          ]}
+        ] },
+        { "intent": ["farm", "weizenfarm", "tiere"], "answer": ["Eine einfache Farm beginnt mit einem Zaun, Wasser und Samen – hast du schon einen Eimer?"] },
+        { "intent": ["mine", "miene", "unterirdisch"], "answer": "Denk an Fackeln! Sonst kommen Creeper." }
+      ]
+    },
+    {
+      "intent": ["craften", "herstellen"],
+      "answer": "Was willst du craften?",
+      "question": "Möchtest du noch etwas craften?",
+      "list": [
+        { "intent": ["spitzhacke", "werkzeug"], "answer": "Holz + Stöcke = Spitzhacke. Stein verbessert sie!" },
+        { "intent": ["ofen", "furnace"], "answer": "8 Kopfsteinpflaster im Kreis – fertig ist der Ofen!" },
+        { "intent": ["werkbank"], "answer": "4 Holzplanken im Inventar craften." }
+      ]
+    },
+    {
+      "intent": ["spielen", "zocken"],
+      "answer": "Minecraft ist immer eine gute Wahl. Spielst du im Survival oder Creative Mode?",
+      "question": "Willst du weiter über Minecraft reden?",
+      "list": [
+        { "intent": ["survival", "überleben"], "answer": "Dann vergiss nicht, nachts zu schlafen – sonst kommen die Phantome!" },
+        { "intent": ["creative", "kreativmodus"], "answer": "Fliegen, unendlich Blöcke – baue deine Welt!" },
+        { "intent": ["hardcore"], "answer": "Du maniac." }
+      ]
+    },
+    {
+      "intent": ["kämpfen", "kampf", "monster"],
+      "answer": "Bereit für den Kampf? Gegen wen willst du antreten?",
+      "question": "Willst du noch mehr über Kämpfen wissen?",
+      "list": [
+        { "intent": ["skelett"], "answer": "Bewege dich viel, nutze ein Schild – Skelette sind zielsicher!" },
+        { "intent": ["zombie", "horde"], "answer": "Zombies sind langsam, aber sie kommen oft in Gruppen – bleib wachsam!" },
+        { "intent": ["creeper"], "answer": "Schlag ihn zurück, bevor er zündet – oder nutze einen Bogen aus sicherer Entfernung." }
+      ]
+    },
+    {
+      "intent": ["verzaubern", "enchanting", "zaubern"],
+      "answer": "Verzauberungstisch bereit? Du brauchst Lapislazuli und Erfahrung.",
+      "question": "Möchtest du noch mehr über Verzauberungen wissen?",
+      "list": [
+        { "intent": ["spitzhacke", "effizienz"], "answer": "Effizienz beschleunigt das Abbauen – ideal für große Minen!" },
+        { "intent": ["rüstung", "schutz"], "answer": "Schutz auf Rüstung verringert Schaden – nützlich in jedem Kampf." },
+        { "intent": ["bogen", "flamme"], "answer": "Flamme setzt getroffene Ziele in Brand – stylisch und effektiv." }
+      ]
+    }
+  ]
+}

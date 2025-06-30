@@ -1,0 +1,121 @@
+body {
+  background-image: url("/images/minecraft-cherry-blossom-biome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Minecraft', monospace;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  width: 900px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border: 2px solid #3c3c3c;
+  box-shadow: 0 0 10px #000;
+}
+
+.chat-log, .user-list {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  padding: 10px;
+  height: 350px;
+  overflow-y: auto;
+}
+
+.chat-log {
+  margin-bottom: 10px;
+}
+
+.chat-message {
+  margin: 3px 0;
+  color: #ccc;
+}
+
+.chat-message.bot {
+  color: #ffffff;
+}
+
+.chat-message.you {
+  color: #e6ace1;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  background-color: #1e1e1e;
+  border: none;
+  color: white;
+  font-family: 'Minecraft', monospace;
+  font-size: 15px;
+}
+
+.chat-input button {
+  padding: 8px 12px;
+  background-color: #e181c7;
+  border: none;
+  color: black;
+  font-family: 'Minecraft', monospace;
+  cursor: pointer;
+
+}
+
+.chat-input button:hover {
+  background-color: #cc44be;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+.user-list {
+  font-size: 16px;
+}
+
+
+/*Anpassung für kleiner Bildschirme wie Smartphones*/
+/*Verwenden dafür Media Query*/
+@media (max-width: 768px){
+  .layout { /*von CSS-Klasse*/
+    display: flex; /*dynamisch*/
+    flex-direction:column; /*untereinander anzeigen*/
+  }
+
+  .chat-log,
+  .user-list {
+    height: 200px; /*oder auto einfügen für automatische Anpassung abhängig vom Inhalt*/
+    max-height: 250px; /*maximal Höhe*/
+    margin-bottom: 10px; /*Abstand nach unten im Inhalt*/
+  }
+
+  .chat-input {
+    flex-direction:column;
+  }
+
+  .chat-input input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .chat-container {
+    width:95%;
+    padding:10px;
+  }
+
+  .chat-input button {
+    width: 100%;
+  }
+}
+

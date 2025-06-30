@@ -1,0 +1,84 @@
+ChatBot kann:
+
+- die Nachricht mit einer JSON Datei abgleichen
+- sich merken was man davor geschrieben hat
+- nachfragen ob man weitermachen will
+- zufällige Antworten auf eine Frage ausgeben
+
+
+Noch machen:
+
+- Fragen vorgeben
+
+
+💬 Conversation x
+Ein Chatbot sollte in der Lage sein, zusammenhängende Gespräche zu führen – also den Kontext von vorherigen Nachrichten erkennen und entsprechend antworten. Beispiel: Wenn der Nutzer fragt „Wie baue ich ein Haus?“ und später sagt „Und wie mache ich Fenster?“, sollte der Bot wissen, dass es immer noch ums Haus geht.
+
+🧯 Soft Fallback x
+Eine sanfte Fehlerbehandlung. Wenn der Bot die Eingabe nicht versteht, antwortet er freundlich, vielleicht mit einer Rückfrage oder einer Auswahlhilfe.
+Beispiel:
+
+„Das habe ich leider nicht ganz verstanden. Meintest du vielleicht XYZ?“
+
+🚫 Hard Fallback x
+Eine harte Fehlerbehandlung. Wenn der Bot gar nicht mehr weiter weiß (z. B. mehrere unverständliche Eingaben hintereinander), wird das Gespräch beendet oder an einen Menschen übergeben.
+Beispiel:
+
+„Ich kann dir dabei leider nicht helfen. Bitte kontaktiere den Support.“
+
+🧠 Remember History per Client x
+Der Bot speichert gesprächsbezogene Informationen je Nutzer (z. B. im RAM oder in einer Datenbank). Dadurch kann er Kontext oder vorherige Fragen/Antworten pro Client wiederverwenden.
+
+❓ 20 Q&A x
+Der Bot sollte mindestens 20 häufige Fragen und Antworten (FAQ) verstehen und korrekt beantworten können – z. B. „Wie installiere ich Mod XY?“ oder „Was ist ein Creeper in Minecraft?“.
+
+🧑‍🎨 Modern Design
+Die Benutzeroberfläche sollte modern und ansprechend gestaltet sein – mit klaren Farben, Icons, Animationen etc. Nutzer erwarten heute keine altmodischen Chat-Fenster mehr.
+
+📱 Responsive Design (check)
+Das Design passt sich automatisch an alle Bildschirmgrößen an – also Desktop, Tablet und Smartphone. Dafür wird meist CSS Flexbox oder Grid verwendet.
+
+⚛️ React
+Ein populäres JavaScript-Framework für UI-Entwicklung. Mit React kannst du interaktive Chat-Komponenten bauen, die sich dynamisch aktualisieren, ohne die Seite neu zu laden.
+
+📡 Socket.IO
+Eine Bibliothek für WebSockets in Echtzeit. Damit kommunizieren Client und Server sofort – perfekt für Chatbots, weil Nachrichten ohne Verzögerung hin- und hergeschickt werden können.
+
+🌐 Express
+Ein minimalistisches Framework für Node.js, mit dem du einen Webserver und APIs für deinen Chatbot erstellen kannst. Es wird z. B. für das Hosting der Website, das Routing und statische Dateien genutzt.
+
+🔒 SSL and WSS (check)
+SSL: Verschlüsselt HTTP-Verbindungen (wird zu HTTPS).
+
+WSS: Das ist die verschlüsselte Version von WebSocket (wie HTTPS für WS).
+Beides sorgt dafür, dass der Chat sicher ist – besonders bei Nutzerdaten oder öffentlichen Deployments.
+
+Zertifikat müsste man vertrauen und installieren. Wenn man es richtig machen will, dass jeder Zugriff hat,
+dann über Encrypt eins herunterladen.
+Das Zertifikat für dieses Projekt gilt nur lokal.
+
+🔍 Keyword Spotting x
+Der Bot durchsucht die Nutzereingabe nach bestimmten Schlüsselwörtern, um die passende Antwort zu finden.
+Beispiel: Bei „Wie installiere ich Forge?“ erkennt er das Keyword „installieren“ + „Forge“ → zeigt Anleitung.
+
+🧩 Code Extensibility x
+Der Code ist modular und erweiterbar. Neue Funktionen (z. B. neue Q&A oder Schnittstellen) lassen sich leicht hinzufügen, ohne den bestehenden Code zu zerstören.
+
+🚀 Deployment
+Der Bot wird auf einem echten Server veröffentlicht, sodass er öffentlich über eine Domain (z. B. meinchatbot.de) erreichbar ist. Deployment beinhaltet:
+
+Upload auf den Server
+
+Starten des Express-Servers
+
+Sicherstellen von SSL/WSS
+
+Automatischer Neustart (z. B. mit PM2)
+
+
+
+
+const fs = require('fs');
+let logfile = "./public/js/json/chatlog.json"
+let data = { user: []}
+fs.writeFileSync(logfile, JSON.stringify(data, null, 2), 'utf8');
