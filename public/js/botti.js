@@ -1,6 +1,6 @@
 const answers = new Array(40);
 let i = 0;
-const socket = new WebSocket('wss://localhost:8181/', 'chat');
+const socket = new WebSocket('ws://localhost:8181/', 'chat');
 
 
 //Um herauszufinden, ob sich der Websocket verbindet oder nicht

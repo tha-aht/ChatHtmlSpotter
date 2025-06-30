@@ -89,7 +89,7 @@ class bot {
 
    //Methode um sich mit dem Server zu verbinden. Achtung wir nutzen localhost
   connect () {
-    this.client.connect('wss://localhost:8181/', 'chat', null, null, {
+    this.client.connect('ws://localhost:8181/', 'chat', null, null, {
     //this.connected = true 
     rejectUnauthorized: false  // Wichtig für self-signed cert
   });

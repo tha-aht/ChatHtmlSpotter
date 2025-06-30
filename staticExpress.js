@@ -1,10 +1,14 @@
 const fs = require('fs');
-const https = require('https');
+
+
+/*const https = require('https');
+
 
 const sslOptions= {
   key: fs.readFileSync(__dirname + '/private.key'),
   cert: fs.readFileSync(__dirname + '/certificate.crt')
 };
+*/
 
 
 /* Pakete die wir brauchen */
@@ -69,6 +73,7 @@ var webserver = app.listen(8081, function () { //starten server ohne Verschlüss
   console.log('Server started at http://localhost:8081')
 })*/
 
+/*
 //Oberer code wird ersetzt durch:
 var webserver = https.createServer(sslOptions, app).listen(8181, 
   function() { //startet Express-Server über HTTPS indem wir Zertifikat -> sslOptions und Schlüssel -> https.createServer(...) übergeben
@@ -76,6 +81,22 @@ var webserver = https.createServer(sslOptions, app).listen(8181,
   console.log(address)
   console.log('Server started at https://localhost:8181')
   });
+*/
+
+//Neu: wegen Render, der gibt Port zum Verbinden
+const PORT = process.env.PORT || 8181;
+
+const webserver = app.listen(PORT, '0.0.0.0', () => { //server speichern und ihn an websocket weitergeben,0.0.0.0 auf alle interfaces
+  console.log(`Server läuft auf Port ${PORT}`);
+});
+
+
+var WSS = require('websocket').server;
+
+var wss = new WSS({
+  httpServer: webserver,
+  autoAcceptConnections: false
+});
 
 
 /*// Das brauchen wir für unsere Websockets
@@ -92,6 +113,7 @@ var wss = new WSS({
   autoAcceptConnections: false
 })*/
 
+/*
 //Oberen beide Codes werden ersetzt durch:
 var WSS = require('websocket').server
 
@@ -101,6 +123,8 @@ var wss = new WSS({
   autoAcceptConnections: false
 });
 // Dadurch laufen staticExpress und Websocket auf Port 8081 und über HTTPS.
+*/
+
 
 /* Wir erstellen einen Bot, der kann sich aber noch nicht mit 
     dem Socket Server verbinden, da dieser noch nicht läuft
