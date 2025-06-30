@@ -84,12 +84,10 @@ class bot {
   }
 
    //Methode um sich mit dem Server zu verbinden. Achtung wir nutzen localhost
- connect () {
-    this.client.connect('wss://minecraft-chatbot.onrender.com/', 'chat', null, null, {
-    //this.connected = true 
-    rejectUnauthorized: false  // Wichtig für self-signed cert
-  });
-}
+  connect () {
+    this.client.connect('wss://minecraft-chatbot.onrender.com/', 'chat')
+    this.connected = true
+  }
 
   /** 
    * Hier muss ihre Verarbeitungslogik integriert werden.
