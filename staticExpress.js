@@ -98,6 +98,23 @@ var wss = new WSS({
   autoAcceptConnections: false
 });
 
+wss.on('request', function (request) {
+  console.log('WebSocket request from:', request.origin);
+  var connection = request.accept('chat', request.origin);
+  console.log('WebSocket connection accepted');
+
+  connection.on('message', function (message) {
+    // Deine Nachricht-Handling-Logik
+  });
+
+  connection.on('error', function (error) {
+    console.error('WebSocket connection error:', error);
+  });
+
+  connection.on('close', function(reasonCode, description) {
+    console.log('WebSocket connection closed:', reasonCode, description);
+  });
+});
 
 /*// Das brauchen wir für unsere Websockets
 var WSS = require('websocket').server
