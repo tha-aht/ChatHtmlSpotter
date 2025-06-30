@@ -1,6 +1,6 @@
 const answers = new Array(40);
 let i = 0;
-const socket = new WebSocket('wss://minecraft-chatbot.onrender.com/', 'chat');
+const socket = new WebSocket('wss://minecraft-chatbot.onrender.com', 'chat');
 
 
 //Um herauszufinden, ob sich der Websocket verbindet oder nicht
