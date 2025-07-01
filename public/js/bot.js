@@ -2,7 +2,7 @@
 const fs = require('fs');
 const LOGFILE = "./public/js/json/chatlog.json";
 
-
+//hi
 var WebSocketClient = require('websocket').client
 
 
@@ -39,27 +39,31 @@ class bot {
 
     
     //Wenn die Verbindung nicht zustande kommt, dann läuft der Aufruf hier hinein
-    this.client.on('connectFailed', function (error) {
+    this.client.on('connectFailed', (error) => {
       console.log('Connect Error: ' + error.toString())
     })
 
      
       //Wenn der Client sich mit dem Server verbindet sind wir hier 
-      this.client.on('connect', function (connection) {
+      this.client.on('connect', (connection) => {
       this.con = connection
+      this.connected = true;
       console.log('WebSocket Client Connected')
-      connection.on('error', function (error) {
+
+
+      connection.on('error', (error) => {
       console.log('Connection Error: ' + error.toString())
       })
 
       //Es kann immer sein, dass sich der Client disconnected (typischer Weise, wenn der Server nicht mehr da ist)
-      connection.on('close', function () {
+      connection.on('close', () => {
       console.log('echo-protocol Connection Closed')
-      })
+      this.connected = false;
+    })
 
       
       //Hier ist der Kern, wenn immmer eine Nachricht empfangen wird, kommt hier die Nachricht an. 
-      connection.on('message', function (message) {
+      connection.on('message', (message) => {
         if (message.type === 'utf8') {
           var data = JSON.parse(message.utf8Data)
           console.log('Received: ' + data.msg + ' ' + data.name)
@@ -85,8 +89,11 @@ class bot {
 
    //Methode um sich mit dem Server zu verbinden. Achtung wir nutzen localhost
   connect () {
-    this.client.connect('wss://minecraft-chatbot.onrender.com/', 'chat')
-    this.connected = true
+    this.client.connect('wss://minecraft-chatbot.onrender.com/', 'chat', null, null, {
+    //this.connected = true 
+    rejectUnauthorized: false  // Wichtig für self-signed cert
+  });
+
   }
 
   /** 
@@ -143,7 +150,7 @@ class bot {
       this.saveIntent([], this.sender)
       this.saveQuestion("", this.sender)
       this.changeFallBackCounter(this.sender, true)
-      this.saveSelection("", this.sender)
+      this.saveSelection(this.sender, "")
     }
 
     this.saveChatMessageBot(this.sender, inhalt)
@@ -151,7 +158,14 @@ class bot {
     //Verarbeitung
     var msg = '{"type": "msg", "name":"' + name + '", "msg":"' + inhalt + '","sender":"'+this.sender+'"}'
     console.log('Send: ' + msg)
-    this.client.con.sendUTF(msg)
+    
+    //Damit der Bot nicht zusammenbicht, wenn der Bot nocht nicht verbunden ist.
+    if (!this.con || !this.connected) {
+      console.log("Bot ist noch nicht verbunden. Nachricht wird verworfen.");
+      return;
+    }
+
+    this.con.sendUTF(msg)
     
   }
 
@@ -350,6 +364,11 @@ class bot {
     //User suchen
     let user = data.users.find(u => u.username === sender);
 
+    if(!user) {
+      user = { username: sender };
+      date.users.push(user);
+    }
+    
     user.currentSelection = currentSelection
 
     // 4. Alles wieder zurückschreiben
