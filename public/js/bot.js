@@ -104,13 +104,14 @@ class bot {
     this.sender=get.name;
     var defaultAnswer = this.randomIndex(this.dAnswer)  //the default Answer
     var understood = this.randomIndex(this.understood)
+    let questionAsked = false;
 
     //Chat History speichern
     this.saveChatMessageUser(this.sender, nachricht)
 
     //Prüft ob der User im aktuellen Intent fortfahren will
     if (this.readQuestion(this.sender) != "" && this.dontContinue(nachricht)){
-      var questionAsked = true;
+      questionAsked = true;
       this.saveQuestion("", this.sender)
       this.saveIntent([], this.sender)
       this.saveSelection("", this.sender)
@@ -137,13 +138,17 @@ class bot {
     //Hard Fallback -> Setzt alles auf Anfang
     if (inhalt == defaultAnswer){
       this.changeFallBackCounter(this.sender, false)
+    } else {
+        // Rücksetzen wenn etwas verstanden hat
+        this.changeFallBackCounter(this.sender, true);
     }
-    if (this.readFallBackCounter(this.sender) == 3){
-      inhalt = "Da ich dich nun mehrfach nicht verstanden habe fangen wir nun von vorne an. " + this.randomIndex(this.needHelp)
-      this.saveIntent([], this.sender)
-      this.saveQuestion("", this.sender)
-      this.changeFallBackCounter(this.sender, true)
-      this.saveSelection("", this.sender)
+
+    if (this.readFallBackCounter(this.sender) >= 3){
+        inhalt = "Da ich dich nun mehrfach nicht verstanden habe, fangen wir nun von vorne an. " + this.randomIndex(this.needHelp);
+        this.saveIntent([], this.sender);
+        this.saveQuestion("", this.sender);
+        this.changeFallBackCounter(this.sender, true);
+        this.saveSelection("", this.sender);
     }
 
     this.saveChatMessageBot(this.sender, inhalt)
