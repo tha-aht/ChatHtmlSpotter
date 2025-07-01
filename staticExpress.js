@@ -84,7 +84,7 @@ var webserver = https.createServer(sslOptions, app).listen(8181,
 */
 
 //Neu: wegen Render, der gibt Port zum Verbinden
-const PORT = process.env.PORT || 8181;
+const PORT = process.env.PORT || 10000;
 
 const webserver = app.listen(PORT, '0.0.0.0', () => { //server speichern und ihn an websocket weitergeben,0.0.0.0 auf alle interfaces
   console.log(`Server läuft auf Port ${PORT}`);
